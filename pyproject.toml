@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "baremetalninja"
+author = "Scott Shawcroft"
+author-email = "scott@tannewt.org"
+home-page = "https://baremetal.ninja"
+classifiers = ["License :: OSI Approved :: MIT License"]
+dist-name = "baremetal-ninja"
+requires = [
+    "toml",
+    "typer"
+]
+
+[tool.flit.scripts]
+"baremetal.ninja" = "baremetalninja.cli:app"
